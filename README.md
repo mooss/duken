@@ -45,3 +45,4 @@ gfg::cascade_node::index() const
 ## Potentials evolutions
 - adding an option to filter out (or prettify) the ugly and terribly long function names of some parts of boost and the stl
 - being able to output calltrees as graphs, using graphviz
+- being able to display/manipulate more informations extracted from gprof (such as the time spend inside a function)
