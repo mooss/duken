@@ -120,7 +120,7 @@ sub analyseSection
             }
             else
             {
-                say STDERR "ligne appellée non matchée : $line";
+                #say STDERR "ligne appellée non matchée : $line";#silence this for now
             }
         }
         else#$indexReached
@@ -132,7 +132,7 @@ sub analyseSection
             }
             else
             {
-                say STDERR "ligne appelante non matchée : $line";
+                #say STDERR "ligne appelante non matchée : $line";#silence
             }
         }
 
