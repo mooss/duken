@@ -15,8 +15,9 @@ The examples are using the file czanalyse.txt, which is provided in this repo an
 
 The fact that duken is written in Perl made it simple (and desirable) to rely on Perl's support for regulars expressions.
 An example is the signature selection feature which allow us to filter out non-matching signatures ('*--signature, -s*') :
-
-`./duken.pl czanalyse.txt --signature ^gfg::cascade_node::`
+```
+./duken.pl czanalyse.txt --signature ^gfg::cascade_node::
+```
 The above example selects only member functions of the class *cascade_node* located inside the namespace *gfg*
 
 ### Output formatting
@@ -30,8 +31,9 @@ The argument of those options is a string describing what the output should be l
     - '~c' is replaced by the number of calls to the current function that occured during the execution
 
 To illustrate this, we can output the numbers of callers and the number of calls of the function gfg::cascade_node::index, using the following command :
-`./duken.pl czanalyse.txt --signature ^gfg::cascade_node::index --before "==========\n~i callers \ncalled ~c times\n"`
-
+```
+./duken.pl czanalyse.txt --signature ^gfg::cascade_node::index --before "==========\n~i callers \ncalled ~c times\n"
+```
 which outputs :
 ```
 ==========
