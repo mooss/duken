@@ -63,7 +63,7 @@ my $end = "<" x $cols;
 
 my $shortcuts = [
     { "shortcut" 	=> [qw(--nice-shortcut)],
-      "replacement" 	=> ["--before", "\n\n$roof\n$_incoming_list_replace\n$begin\ncalled $_callnumber_replace times\n", "--after", "$end" ] }
+      "replacement" 	=> ["--before", "\n\n$roof\n$_incoming_list_replace\n$begin\ncalled $_callnumber_replace times\n", "--after", "\n$end" ] }
 ];
 
 
