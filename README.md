@@ -1,9 +1,9 @@
 # duken
-a gprof parser
+A gprof output parser.
 
 ## Presentation
 
-duken is a script that aims at extracting informations from gprof's output. It was created with a specific task in mind: being able to identify informations about "spontaneous" functions, that is to say function whose caller was not determined by gprof.
+Duken is a script that aims at extracting informations from gprof's output. It was created with a specific task in mind: being able to identify informations about "spontaneous" functions, that is to say function whose caller was not determined by gprof.
 
 ## Features (with examples)
 
@@ -46,3 +46,4 @@ gfg::cascade_node::index() const
 - adding an option to filter out (or prettify) the ugly and terribly long function names of some parts of boost and the stl
 - being able to output calltrees as graphs, using graphviz
 - being able to display/manipulate more informations extracted from gprof (such as the time spend inside a function)
+- make the code and the structure of the program more readable/flexible/clean (perhaps rewrite everything with moose)
