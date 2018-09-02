@@ -6,6 +6,8 @@ use v5.14;
 use constant TRUE => 1;
 use constant FALSE => 0;
 
+use FindBin;
+use lib $FindBin::Bin;
 use duken::ArgHandler;
 
 my $interprete = duken::ArgHandler->new(\@ARGV);
